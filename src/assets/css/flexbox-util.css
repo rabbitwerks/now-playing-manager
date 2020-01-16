@@ -430,6 +430,30 @@ SHORTHAND SYNTAX FOR FLEXBOX UTIL LIBRARY @rabbitwerks.js
 .f12 {
   flex: 12;
 }
+.f13 {
+  flex: 13;
+}
+.f14 {
+  flex: 14;
+}
+.f15 {
+  flex: 15;
+}
+.f16 {
+  flex: 16;
+}
+.f17 {
+  flex: 17;
+}
+.f18 {
+  flex: 18;
+}
+.f19 {
+  flex: 19;
+}
+.f20 {
+  flex: 20;
+}
 
 .fxbx.spc-ctr {
   justify-content: center;
@@ -586,6 +610,4 @@ SHORTHAND SYNTAX FOR FLEXBOX UTIL LIBRARY @rabbitwerks.js
  }
  
  
- .fs1 {
-   flex: 1;
- }
+

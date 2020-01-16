@@ -1,13 +1,22 @@
 <template>
   <div id="app" class="fxbx fd-c">
-    <!-- TODO: refactor navbar to usual nav -->
-    <div id="nav">
-      <router-link to="/dashboard">Dashboard</router-link> |
-      <router-link to="/about">Display</router-link>
-    </div>
+    <Navbar--Main />
     <router-view />
+    <div class="footer">
+      Created By RabbitWerks JavaScript
+    </div>
   </div>
 </template>
+
+<script>
+import Navbar_Main from './components/navbar/Navbar_Main.vue';
+
+export default {
+  components: {
+    'Navbar--Main': Navbar_Main,
+  },
+};
+</script>
 
 <style>
 @import url('./assets/css/flexbox-util.css');
@@ -17,19 +26,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-/*TODO: Style App using flexbox and util lib */
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  color: #cecece;
 }
 </style>
