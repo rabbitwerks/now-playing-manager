@@ -1,10 +1,13 @@
 <template>
-  <div class="track--outer">
+  <div
+    @dblclick="setCurrentTrack"
+    class="track--outer"
+    >
     <div class="track--artist">
       {{ artist }}
     </div>
     <div class="track--title">
-      {{ title }}
+      {{ track }}
     </div>
   </div>
 </template>
@@ -16,9 +19,21 @@ export default {
       type: String,
       required: true,
     },
-    title: {
+    track: {
       type: String,
       required: true,
+    },
+    index: {
+      type: Number,
+    },
+  },
+  methods: {
+    setCurrentTrack() {
+      this.$store.dispatch('set_NowPlaying_ACTION', {
+        artist: this.artist,
+        track: this.track,
+        index: this.index,
+      });
     },
   },
 };

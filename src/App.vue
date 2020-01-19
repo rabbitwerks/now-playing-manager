@@ -34,4 +34,3 @@ export default {
   border-top: 3px solid #42b983;
 }
 </style>
-/-

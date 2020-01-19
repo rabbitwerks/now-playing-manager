@@ -5,10 +5,11 @@
     </div>
     <div class="tracklist--main">
       <Track-Item
-        v-for="track in tracks"
-        :key="track.title"
+        v-for="(track, i) in completedTracks"
+        :key="track.track + i"
         :artist="track.artist"
-        :title="track.title"
+        :track="track.track"
+        :index="track.index"
       />
     </div>
 
@@ -19,15 +20,10 @@
 import Track_Item from './Track_Item.vue';
 
 export default {
-  data() {
-    return {
-      tracks: [
-        {
-          artist: 'Unit 21',
-          title: 'Lets Have Fun',
-        },
-      ],
-    };
+  computed: {
+    completedTracks() {
+      return this.$store.state.completedTracks;
+    },
   },
   components: {
     'Track-Item': Track_Item,
