@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="display">
+    <Now-Playing--Display />
   </div>
 </template>
+
+<script>
+import Current_Track from '../components/now-playing/Now_Playing.vue';
+
+export default {
+  components: {
+    'Now-Playing--Display': Current_Track,
+  },
+};
+</script>
