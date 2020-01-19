@@ -109,7 +109,7 @@ export default {
   padding: .5rem;
 }
 .tracklist--main {
-  max-height: 80vh;
+  height: 78vh;
   overflow-y: scroll;
 }
 </style>

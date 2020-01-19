@@ -2,7 +2,7 @@
   <div id="app" class="fxbx fd-c">
     <Navbar--Main />
     <router-view />
-    <div class="footer">
+    <div class="footer fxbx spc-ctr">
       Created By RabbitWerks JavaScript
     </div>
   </div>
@@ -27,5 +27,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #cecece;
+  overflow-y: hidden;
+}
+.footer {
+  height: 3rem;
+  border-top: 3px solid #42b983;
 }
 </style>
+/-
