@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .now-playing--outer {
   height: 10rem;
-  margin: 0 3rem;
+  margin: 1rem 0 8rem 0;
   border: 3px solid #42b983;
   background-color: rgb(24, 31, 34);
 }

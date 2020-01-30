@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="fxbx fd-c">
-    <Navbar--Main />
+    <!-- <Navbar--Main /> -->
     <router-view />
     <div class="footer fxbx spc-ctr">
       Created By RabbitWerks JavaScript
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Navbar_Main from './components/navbar/Navbar_Main.vue';
+// import Navbar_Main from './components/navbar/Navbar_Main.vue';
 
 export default {
   components: {
-    'Navbar--Main': Navbar_Main,
+    // 'Navbar--Main': Navbar_Main,
   },
 };
 </script>

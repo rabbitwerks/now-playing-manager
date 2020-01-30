@@ -1,9 +1,11 @@
 <template>
   <div class="dashboard">
-    <div class="dashboard--container fxbx">
-      <Track-List class="f2" />
+    <div class="dashboard--container fxbx fd-c">
       <Now-Playing class="f3" />
-      <Completed-Track-List class="f2" />
+      <div class="tracklist--columns fxbx">
+        <Track-List class="f2" />
+        <Completed-Track-List class="f2" />
+      </div>
     </div>
   </div>
 </template>
