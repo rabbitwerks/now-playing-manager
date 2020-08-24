@@ -8,19 +8,27 @@ export default new Vuex.Store({
     nowPlaying: {
       artist: '',
       track: '',
+      played: '',
+      replayed: '',
     },
     avaliableTracks: [
       {
         artist: 'Unit 21',
         track: 'Lets Have Fun',
+        played: false,
+        replayed: false,
       },
       {
         artist: 'Unit 21',
         track: 'Soccer Mom',
+        played: false,
+        replayed: false,
       },
       {
         artist: 'Unit 21',
         track: 'Rise Fall Repeat',
+        played: false,
+        replayed: false,
       },
     ],
     completedTracks: [
@@ -33,11 +41,19 @@ export default new Vuex.Store({
         state.completedTracks.push({
           artist: state.nowPlaying.artist,
           track: state.nowPlaying.track,
+          played: state.nowPlaying.played,
+          replayed: state.nowPlaying.replayed,
         });
       }
       state.nowPlaying.artist = payload.artist;
       state.nowPlaying.track = payload.track;
-      state.avaliableTracks.splice(payload.index, 1);
+      state.nowPlaying.played = payload.played;
+      state.nowPlaying.index = payload.index;
+      if (payload.replayed) {
+        state.completedTracks.splice(payload.index, 1);
+      } else {
+        state.avaliableTracks.splice(payload.index, 1);
+      }
     },
   },
   actions: {

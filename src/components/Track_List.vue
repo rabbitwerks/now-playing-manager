@@ -10,6 +10,7 @@
         :index="i"
         :artist="track.artist"
         :track="track.track"
+        :played="track.played"
       />
     </div>
   </div>

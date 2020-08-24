@@ -9,6 +9,7 @@
         :key="track.track + i"
         :artist="track.artist"
         :track="track.track"
+        :played="track.played"
         :index="track.index"
       />
     </div>

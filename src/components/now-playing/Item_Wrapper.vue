@@ -17,7 +17,7 @@ export default {
       required: true,
     },
     value: {
-      type: String,
+      type: [String, Boolean],
       default: 'Unknown',
     },
   },

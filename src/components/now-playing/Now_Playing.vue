@@ -12,6 +12,10 @@
         label="Track:"
         :value="nowPlaying.track || 'Unknown'"
       />
+      <Item-Wrapper
+        label="Played:"
+        :value="nowPlaying.played || 'Unknown'"
+      />
     </div>
   </div>
 </template>
